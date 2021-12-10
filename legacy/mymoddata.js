@@ -4172,3 +4172,4 @@ func:function()
 	}
 }
 });
+//my own commands (trugam3rr here)
