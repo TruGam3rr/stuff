@@ -2,12 +2,10 @@ if(Cheato === undefined) var Cheato = {};
 if(typeof CCSE == 'undefined') Game.LoadMod('https://klattmose.github.io/CookieClicker/CCSE.js');
 
 Cheato.launch = function(){
-	/**
-	
-	All the code you want to delay goes here
-	Put "Cheato.isLoaded = 1;" somewhere within
-	
-	**/
+	Cheato.isLoaded=1;
+	Game.customOptionsMenu.push(function(){
+	CCSE.AppendCollapsibleOptionsMenu("Cheato", Cheato.optionsMenu());
+	});
 }
 
 if(!Cheato.isLoaded){
@@ -20,9 +18,7 @@ if(!Cheato.isLoaded){
 		CCSE.postLoadHooks.push(Cheato.launch);
 	}
 }
-Game.customOptionsMenu.push(function(){
-CCSE.AppendCollapsibleOptionsMenu("Cheato", Cheato.optionsMenu());
-});
+
 
 
 
