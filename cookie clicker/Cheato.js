@@ -1,23 +1,23 @@
-if(MyMod === undefined) var MyMod = {};
+if(Cheato === undefined) var Cheato = {};
 if(typeof CCSE == 'undefined') Game.LoadMod('https://klattmose.github.io/CookieClicker/CCSE.js');
 
-MyMod.launch = function(){
+Cheato.launch = function(){
 	/**
 	
 	All the code you want to delay goes here
-	Put "MyMod.isLoaded = 1;" somewhere within
+	Put "Cheato.isLoaded = 1;" somewhere within
 	
 	**/
 }
 
-if(!MyMod.isLoaded){
+if(!Cheato.isLoaded){
 	if(CCSE && CCSE.isLoaded){
-		MyMod.launch();
+		Cheato.launch();
 	}
 	else{
 		if(!CCSE) var CCSE = {};
 		if(!CCSE.postLoadHooks) CCSE.postLoadHooks = [];
-		CCSE.postLoadHooks.push(MyMod.launch);
+		CCSE.postLoadHooks.push(Cheato.launch);
 	}
 }
 Game.customOptionsMenu.push(function(){
