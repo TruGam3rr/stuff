@@ -4,7 +4,7 @@ if(typeof CCSE == 'undefined') Game.LoadMod('https://klattmose.github.io/CookieC
 Cheato.launch = function(){
 	Cheato.isLoaded=1;
 	Game.customOptionsMenu.push(function(){
-	CCSE.AppendCollapsibleOptionsMenu("Cheato", Cheato.optionsMenu());
+	CCSE.AppendCollapsibleOptionsMenu(Cheato.Menu, Cheato.optionsMenu());
 	});
 }
 
