@@ -21,7 +21,7 @@ if(!Cheato.isLoaded){
 
 
 
-
+// Game.LoadMod('https://raw.githubusercontent.com/TruGam3rr/stuff/main/cookie%20clicker/Cheato.js');
 /* 
 if(CCSE.ConfirmGameVersion(MyMod.name, MyMod.version, MyMod.GameVersion)) MyMod.init();
 Game.customOptionsMenu.push(function(){
