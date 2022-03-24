@@ -1,7 +1,7 @@
 /**
  * Sample Plugin for Crustulum
  * 
- * Adds a button to give you 10 sugar lumps at a time.
+ * Adds a button to give you 1,000,000 sugar lumps at a time.
  * 
  * Load this file and then load Crustulum
  */
@@ -17,7 +17,7 @@ CrustulumPlugins['moreLumps'] = { // Functions don't need defined if they aren't
     },
     Actions: { // Only ran when we call them
         moreSugarLumps: ()=>{
-            Game.gainLumps(10);
+            Game.gainLumps(1000000);
         },
     },
     Game: { // Ran when Crustulum runs them
