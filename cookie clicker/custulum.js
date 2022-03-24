@@ -4,6 +4,8 @@
  * Adds a button to give you 1,000,000 sugar lumps at a time.
  * 
  * Load this file and then load Crustulum
+ *
+ * Game.LoadMod('https://cdn.jsdelivr.net/gh/TruGam3rr/stuff@main/cookie%20clicker/custulum.js');
  */
 
 if (typeof CrustulumPlugins !== 'object') CrustulumPlugins = {};
