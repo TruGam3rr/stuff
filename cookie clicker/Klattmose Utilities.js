@@ -1,4 +1,4 @@
-// Game.LoadMod('https://raw.githubusercontent.com/TruGam3rr/stuff/main/cookie%20clicker/Klattmose%20Utilities.js');
+// Game.LoadMod('https://cdn.jsdelivr.net/gh/TruGam3rr/stuff@main/cookie%20clicker/Klattmose%20Utilities.js');
 Game.Win('Third-party');
 if(KlattmoseUtilities === undefined) var KlattmoseUtilities = {};
 if(KlattmoseUtilities.patches === undefined) KlattmoseUtilities.patches = {};
