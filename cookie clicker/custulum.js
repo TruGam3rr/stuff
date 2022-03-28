@@ -10,7 +10,7 @@
 
 if (typeof CrustulumPlugins !== 'object') CrustulumPlugins = {};
 
-CrustulumPlugins['moreLumps'] = { // Functions don't need defined if they aren't used -- defined here for example only
+CrustulumPlugins['moreButtons'] = { // Functions don't need defined if they aren't used -- defined here for example only
     Init: () => { // Ran after Crustulum inits
     },
     Loaded: () => { // Ran after Crustulum is loaded but before Init() is called
