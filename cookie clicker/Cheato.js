@@ -1,5 +1,6 @@
-// i copied crustulum and tweaked it btw
-
+/* i copied crustulum and tweaked it btw
+Game.LoadMod('https://cdn.jsdelivr.net/gh/TruGam3rr/stuff@main/cookie%20clicker/Cheato.js');
+*/
 if (typeof Cheato !== 'undefined') {
     if (Cheato === null) {
         delete Cheato;
