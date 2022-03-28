@@ -1,7 +1,7 @@
 /**
  * Sample Plugin for Crustulum
  * 
- * Adds a button to give you 1,000,000 sugar lumps at a time.
+ * Adds more buttons.
  * 
  * Load this file and then load Crustulum
  *
@@ -21,11 +21,19 @@ CrustulumPlugins['moreLumps'] = { // Functions don't need defined if they aren't
         moreSugarLumps: ()=>{
             Game.gainLumps(1000000);
         },
+        moreCookies: ()=>{
+            Game.cookies = Game.cookies * 2;
+        },
+        unlockAchievements: ()=>{
+            Game.SetAllAchievs(1);
+        },
     },
     Game: { // Ran when Crustulum runs them
         UpdateMenu: (fragment) => { 
-            fragment.appendChild(Crustulum.Menu.subheading('Crustulum: More Lumps Add-on'));
-            fragment.appendChild(Crustulum.Menu.actionButton('giveSugarLump','Give Sugar Lump','Gives you a sugar limp.', Crustulum.Plugins['moreLumps'].Actions.moreSugarLumps));
+            fragment.appendChild(Crustulum.Menu.subheading('Crustulum: More Buttons'));
+            fragment.appendChild(Crustulum.Menu.actionButton('giveSugarLump','Give Sugar Lumps','Gives you 1 million sugar lumps.', Crustulum.Plugins['moreLumps'].Actions.moreSugarLumps));
+            fragment.appendChild(Crustulum.Menu.actionButton('moreCookies','Multiply Cookies','Gives you 2x your current amount of cookies.', Crustulum.Plugins['moreCookies'].Actions.moreCookies));
+            fragment.appendChild(Crustulum.Menu.actionButton('unlockAcheivs','Unlock Acheivements','Unlocks every single acheivement in the game.', Crustulum.Plugins['unlockAchievs'].Actions.unlockAchievs));
         },
     },
 };
