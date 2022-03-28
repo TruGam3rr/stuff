@@ -1,3 +1,4 @@
+// made by me the github dude
 if(Cheato === undefined) var Cheato = {};
 if(typeof CCSE == 'undefined') Game.LoadMod('https://klattmose.github.io/CookieClicker/CCSE.js');
 
