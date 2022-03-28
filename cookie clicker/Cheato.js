@@ -46,8 +46,9 @@ var Cheato = {
                 fragment.appendChild(Cheato.Menu.actionButton('unlockAllWeedFungusSeeds','Unlock Weed and Fungi Seeds','Unlocks all the weed and fungus seeds for the Garden.', Cheato.Actions.unlockAllWeedFungusSeeds));
                 fragment.appendChild(Cheato.Menu.actionButton('lockAllSeeds','Lock All Seeds','Locks all the seeds for the Garden except for the starting seed.', Cheato.Actions.lockAllSeeds));
                 fragment.appendChild(Cheato.Menu.subheading('Misc'));
-                fragment.appendChild(Cheato.Menu.actionButton('unlockAchievs','Unlock Acheivements','Unlock all achievements.', Cheato.Actions.unlockAchievs));
+                fragment.appendChild(Cheato.Menu.actionButton('unlockAchievs','Unlock Acheivements','Unlocks all achievements.', Cheato.Actions.unlockAchievs));
 		fragment.appendChild(Cheato.Menu.actionButton('removeCheatedCookies','Remove Cheat Achievement','Remove \'Cheated cookies taste awful\' achievement', Cheato.Actions.removeCheatedCookies));
+   		fragment.appendChild(Cheato.Menu.actionButton('ruinTheFun','Ruin The Fun','Ruins the fun by unlocking everything and giving you an absurd amount of cookies.', Cheato.Actions.ruinTheFun));
 
 
                 // Unload Cheato button. Doesn't work if you loaded other add-ons first. We check only for Cookie Monster.
@@ -75,6 +76,7 @@ var Cheato = {
         },
 	unlockAchievs: ()=>Game.SetAllAchievs(1),
         removeCheatedCookies: ()=>Game.RemoveAchiev('Cheated cookies taste awful'),
+	ruinTheFun: ()=>Game.RuinTheFun(1),
         refillMagic: ()=>{
             if (Game.Objects['Wizard tower'].minigameLoaded && Game.Objects['Wizard tower'].minigame.magicM)
                 Game.Objects['Wizard tower'].minigame.magic = Game.Objects['Wizard tower'].minigame.magicM;
