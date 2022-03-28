@@ -1,4 +1,4 @@
-// im sorry but i copied crustulum and tweaked it, please be mad at me.
+// i copied crustulum and tweaked it btw
 
 if (typeof Cheato !== 'undefined') {
     if (Cheato === null) {
