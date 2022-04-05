@@ -36,17 +36,17 @@ var Cheato = {
                 fragment.appendChild(Cheato.Menu.actionButton('spawnGolden','Spawn a Golden Cookie','Spawns a golden cookie.', Cheato.Actions.spawnGolden));
                 fragment.appendChild(Cheato.Menu.actionButton('spawnGoldenFrenzy','Spawn a Frenzy Cookie','Spawns a golden cookie that will cause a frenzy.', Cheato.Actions.spawnGolden));
                 fragment.appendChild(Cheato.Menu.actionButton('spawnGoldenDragonflight','Spawn a Dragonflight Cookie','Spawns a golden cookie that will cause a dragonflight.', Cheato.Actions.spawnGoldenDragonflight));
-                fragment.appendChild(Cheato.Menu.actionButton('giveSugarLump','Give Sugar Lump','Gives you a sugar lump.', Cheato.Actions.giveSugarLump));
+                fragment.appendChild(Cheato.Menu.actionButton('giveSugarLump','Give Sugar Lumps','Gives you 1,000,000 sugar lumps.', Cheato.Actions.giveSugarLump));
                 fragment.appendChild(Cheato.Menu.actionButton('giveCookies','Give Cookies','Gives you the most cookies you can have without getting the cheated cookies achievement.', Cheato.Actions.giveCookies));
                 fragment.appendChild(Cheato.Menu.subheading('Mini-games'));
                 fragment.appendChild(Cheato.Menu.actionButton('refillMagic','Refill Magic','Refill all of your Grimoire\'s magic.', Cheato.Actions.refillMagic));
                 fragment.appendChild(Cheato.Menu.actionButton('refillSwaps','Refill Swaps','Refill all of your Pantheon\'s swaps', Cheato.Actions.refillSwaps));
                 fragment.appendChild(Cheato.Menu.subheading('Unlock Things'));
+		fragment.appendChild(Cheato.Menu.actionButton('unlockAchievs','Unlock Acheivements','Unlocks all achievements.', Cheato.Actions.unlockAchievs));
                 fragment.appendChild(Cheato.Menu.actionButton('unlockAllSeeds','Unlock Plant Seeds','Unlocks all the plant seeds for your Garden. Does not unlock weeds or fungi.', Cheato.Actions.unlockAllSeeds));
                 fragment.appendChild(Cheato.Menu.actionButton('unlockAllWeedFungusSeeds','Unlock Weed and Fungi Seeds','Unlocks all the weed and fungus seeds for the Garden.', Cheato.Actions.unlockAllWeedFungusSeeds));
                 fragment.appendChild(Cheato.Menu.actionButton('lockAllSeeds','Lock All Seeds','Locks all the seeds for the Garden except for the starting seed.', Cheato.Actions.lockAllSeeds));
                 fragment.appendChild(Cheato.Menu.subheading('Misc'));
-                fragment.appendChild(Cheato.Menu.actionButton('unlockAchievs','Unlock Acheivements','Unlocks all achievements.', Cheato.Actions.unlockAchievs));
 		fragment.appendChild(Cheato.Menu.actionButton('removeCheatedCookies','Remove Cheat Achievement','Remove \'Cheated cookies taste awful\' achievement', Cheato.Actions.removeCheatedCookies));
    		fragment.appendChild(Cheato.Menu.actionButton('ruinTheFun','Ruin The Fun','Ruins the fun by unlocking everything and giving you an absurd amount of cookies.', Cheato.Actions.ruinTheFun));
 
@@ -89,10 +89,10 @@ var Cheato = {
             }
         },
         giveSugarLump: ()=>{
-            Game.gainLumps(1);
+            Game.gainLumps(1000000);
         },
         giveCookies: ()=>{
-            Game.cookies = Game.cookiesEarned;
+            Game.cookies += Game.cookiesEarned;
         },
         unlockAllSeeds: ()=>{
             if(Game.Objects['Farm'].minigameLoaded && Game.Objects['Farm'].minigame.plants) {
